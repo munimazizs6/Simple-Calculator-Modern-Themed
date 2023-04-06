@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 25px;
+    transition: 0.4s ease;
+}
+#active{
+    color: orange;
+    font-size: 30px;
+}
+.navbar a:not(#active){
+    opacity: 0.5;
+}
+.navbar a:hover{
+    color:  orange;
+    font-size: 30px;
+}
+.footer{
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer p{
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);    
+    margin: 25px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.238) 0 0 15px;
+}
+.rw{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.rw input{
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid white;
+    color: orange;
+    transition: 0.4s;
+}
+.rw input:focus{
+   outline: none;
+   color: white;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.293);
+}
+.rw button{
+    font-size: 20px;
+    padding: 5px;
+    width: 30%;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.rw button:hover{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+.rw .calc{
+    width: 100%;
+}
